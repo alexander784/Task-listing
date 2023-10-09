@@ -6,7 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
     addTaskButton.addEventListener("click", function () {
         const taskText = taskInput.ariaValueMax.trim();
 
-        
+        if(taskText !== "") {
+            const li = document.createElement("li");
+            li.innerHTML = `
+            <span>${taskText}</span>
+            <button class="delete-button">Delete</button>
+            `;
+        }
     })
 
 });
