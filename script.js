@@ -26,3 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
 });
+
+taskInput.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      addTaskButton.click();
+    }
+});
