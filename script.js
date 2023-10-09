@@ -12,6 +12,16 @@ document.addEventListener("DOMContentLoaded", function () {
             <span>${taskText}</span>
             <button class="delete-button">Delete</button>
             `;
+
+            taskList.appendChild(li);
+
+            taskInput.value = "";
+
+            li.querySelector(".delete-button").addEventListener("click", function () {
+                taskList.removeChild(li);
+            });
+
+
         }
     })
 
