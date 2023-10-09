@@ -39,3 +39,18 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
